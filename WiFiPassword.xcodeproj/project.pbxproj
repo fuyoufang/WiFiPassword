@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3933BE826B53F5F00195DD7 /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3933BE726B53F5F00195DD7 /* SizePreferenceKey.swift */; };
+		A3933BF026B540CD00195DD7 /* WiFiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3933BEF26B540CD00195DD7 /* WiFiHelper.swift */; };
+		A3933BF826B5417000195DD7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3933BF726B5417000195DD7 /* AppError.swift */; };
+		A396238326B4D71A00D44685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A396238226B4D71A00D44685 /* AppDelegate.swift */; };
+		A396238526B4D71A00D44685 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A396238426B4D71A00D44685 /* ContentView.swift */; };
+		A396238726B4D72400D44685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A396238626B4D72400D44685 /* Assets.xcassets */; };
+		A396238A26B4D72400D44685 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A396238926B4D72400D44685 /* Preview Assets.xcassets */; };
+		A396238D26B4D72400D44685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A396238B26B4D72400D44685 /* Main.storyboard */; };
+		A396239926B4D72400D44685 /* WiFiPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A396239826B4D72400D44685 /* WiFiPasswordTests.swift */; };
+		A39623A426B4D72400D44685 /* WiFiPasswordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39623A326B4D72400D44685 /* WiFiPasswordUITests.swift */; };
+		A39624D026B4F25700D44685 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39624CF26B4F25600D44685 /* QRCode.swift */; };
+		A39624D826B500D000D44685 /* WiFiInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39624D726B500D000D44685 /* WiFiInfoView.swift */; };
+		A39624E026B535E500D44685 /* NSImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39624DF26B535E500D44685 /* NSImage+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A396239526B4D72400D44685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A396237726B4D71A00D44685 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A396237E26B4D71A00D44685;
+			remoteInfo = WiFiPassword;
+		};
+		A39623A026B4D72400D44685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A396237726B4D71A00D44685 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A396237E26B4D71A00D44685;
+			remoteInfo = WiFiPassword;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3933BE726B53F5F00195DD7 /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
+		A3933BEF26B540CD00195DD7 /* WiFiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiHelper.swift; sourceTree = "<group>"; };
+		A3933BF726B5417000195DD7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A396237F26B4D71A00D44685 /* WiFiPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A396238226B4D71A00D44685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A396238426B4D71A00D44685 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A396238626B4D72400D44685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A396238926B4D72400D44685 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A396238C26B4D72400D44685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A396238E26B4D72400D44685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A396238F26B4D72400D44685 /* WiFiPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WiFiPassword.entitlements; sourceTree = "<group>"; };
+		A396239426B4D72400D44685 /* WiFiPasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiPasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A396239826B4D72400D44685 /* WiFiPasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiPasswordTests.swift; sourceTree = "<group>"; };
+		A396239A26B4D72400D44685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A396239F26B4D72400D44685 /* WiFiPasswordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiPasswordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39623A326B4D72400D44685 /* WiFiPasswordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiPasswordUITests.swift; sourceTree = "<group>"; };
+		A39623A526B4D72400D44685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39624CF26B4F25600D44685 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		A39624D726B500D000D44685 /* WiFiInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiInfoView.swift; sourceTree = "<group>"; };
+		A39624DF26B535E500D44685 /* NSImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A396237C26B4D71A00D44685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A396239126B4D72400D44685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A396239C26B4D72400D44685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A396237626B4D71A00D44685 = {
+			isa = PBXGroup;
+			children = (
+				A396238126B4D71A00D44685 /* WiFiPassword */,
+				A396239726B4D72400D44685 /* WiFiPasswordTests */,
+				A39623A226B4D72400D44685 /* WiFiPasswordUITests */,
+				A396238026B4D71A00D44685 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A396238026B4D71A00D44685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A396237F26B4D71A00D44685 /* WiFiPassword.app */,
+				A396239426B4D72400D44685 /* WiFiPasswordTests.xctest */,
+				A396239F26B4D72400D44685 /* WiFiPasswordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A396238126B4D71A00D44685 /* WiFiPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A39624E726B5363C00D44685 /* Extension */,
+				A396238226B4D71A00D44685 /* AppDelegate.swift */,
+				A396238426B4D71A00D44685 /* ContentView.swift */,
+				A39624D726B500D000D44685 /* WiFiInfoView.swift */,
+				A396238626B4D72400D44685 /* Assets.xcassets */,
+				A396238B26B4D72400D44685 /* Main.storyboard */,
+				A396238E26B4D72400D44685 /* Info.plist */,
+				A396238F26B4D72400D44685 /* WiFiPassword.entitlements */,
+				A396238826B4D72400D44685 /* Preview Content */,
+				A39624CF26B4F25600D44685 /* QRCode.swift */,
+				A3933BE726B53F5F00195DD7 /* SizePreferenceKey.swift */,
+				A3933BEF26B540CD00195DD7 /* WiFiHelper.swift */,
+				A3933BF726B5417000195DD7 /* AppError.swift */,
+			);
+			path = WiFiPassword;
+			sourceTree = "<group>";
+		};
+		A396238826B4D72400D44685 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A396238926B4D72400D44685 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A396239726B4D72400D44685 /* WiFiPasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				A396239826B4D72400D44685 /* WiFiPasswordTests.swift */,
+				A396239A26B4D72400D44685 /* Info.plist */,
+			);
+			path = WiFiPasswordTests;
+			sourceTree = "<group>";
+		};
+		A39623A226B4D72400D44685 /* WiFiPasswordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A39623A326B4D72400D44685 /* WiFiPasswordUITests.swift */,
+				A39623A526B4D72400D44685 /* Info.plist */,
+			);
+			path = WiFiPasswordUITests;
+			sourceTree = "<group>";
+		};
+		A39624E726B5363C00D44685 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A39624DF26B535E500D44685 /* NSImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A396237E26B4D71A00D44685 /* WiFiPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39623A826B4D72400D44685 /* Build configuration list for PBXNativeTarget "WiFiPassword" */;
+			buildPhases = (
+				A396237B26B4D71A00D44685 /* Sources */,
+				A396237C26B4D71A00D44685 /* Frameworks */,
+				A396237D26B4D71A00D44685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiPassword;
+			productName = WiFiPassword;
+			productReference = A396237F26B4D71A00D44685 /* WiFiPassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A396239326B4D72400D44685 /* WiFiPasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39623AB26B4D72400D44685 /* Build configuration list for PBXNativeTarget "WiFiPasswordTests" */;
+			buildPhases = (
+				A396239026B4D72400D44685 /* Sources */,
+				A396239126B4D72400D44685 /* Frameworks */,
+				A396239226B4D72400D44685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A396239626B4D72400D44685 /* PBXTargetDependency */,
+			);
+			name = WiFiPasswordTests;
+			productName = WiFiPasswordTests;
+			productReference = A396239426B4D72400D44685 /* WiFiPasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A396239E26B4D72400D44685 /* WiFiPasswordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39623AE26B4D72400D44685 /* Build configuration list for PBXNativeTarget "WiFiPasswordUITests" */;
+			buildPhases = (
+				A396239B26B4D72400D44685 /* Sources */,
+				A396239C26B4D72400D44685 /* Frameworks */,
+				A396239D26B4D72400D44685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39623A126B4D72400D44685 /* PBXTargetDependency */,
+			);
+			name = WiFiPasswordUITests;
+			productName = WiFiPasswordUITests;
+			productReference = A396239F26B4D72400D44685 /* WiFiPasswordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A396237726B4D71A00D44685 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A396237E26B4D71A00D44685 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A396239326B4D72400D44685 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A396237E26B4D71A00D44685;
+					};
+					A396239E26B4D72400D44685 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A396237E26B4D71A00D44685;
+					};
+				};
+			};
+			buildConfigurationList = A396237A26B4D71A00D44685 /* Build configuration list for PBXProject "WiFiPassword" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A396237626B4D71A00D44685;
+			productRefGroup = A396238026B4D71A00D44685 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A396237E26B4D71A00D44685 /* WiFiPassword */,
+				A396239326B4D72400D44685 /* WiFiPasswordTests */,
+				A396239E26B4D72400D44685 /* WiFiPasswordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A396237D26B4D71A00D44685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A396238D26B4D72400D44685 /* Main.storyboard in Resources */,
+				A396238A26B4D72400D44685 /* Preview Assets.xcassets in Resources */,
+				A396238726B4D72400D44685 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A396239226B4D72400D44685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A396239D26B4D72400D44685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A396237B26B4D71A00D44685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A396238526B4D71A00D44685 /* ContentView.swift in Sources */,
+				A396238326B4D71A00D44685 /* AppDelegate.swift in Sources */,
+				A39624E026B535E500D44685 /* NSImage+Extension.swift in Sources */,
+				A39624D026B4F25700D44685 /* QRCode.swift in Sources */,
+				A3933BF826B5417000195DD7 /* AppError.swift in Sources */,
+				A39624D826B500D000D44685 /* WiFiInfoView.swift in Sources */,
+				A3933BE826B53F5F00195DD7 /* SizePreferenceKey.swift in Sources */,
+				A3933BF026B540CD00195DD7 /* WiFiHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A396239026B4D72400D44685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A396239926B4D72400D44685 /* WiFiPasswordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A396239B26B4D72400D44685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39623A426B4D72400D44685 /* WiFiPasswordUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A396239626B4D72400D44685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A396237E26B4D71A00D44685 /* WiFiPassword */;
+			targetProxy = A396239526B4D72400D44685 /* PBXContainerItemProxy */;
+		};
+		A39623A126B4D72400D44685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A396237E26B4D71A00D44685 /* WiFiPassword */;
+			targetProxy = A39623A026B4D72400D44685 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A396238B26B4D72400D44685 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A396238C26B4D72400D44685 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A39623A626B4D72400D44685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A39623A726B4D72400D44685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A39623A926B4D72400D44685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WiFiPassword/WiFiPassword.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"WiFiPassword/Preview Content\"";
+				DEVELOPMENT_TEAM = WH8WQW889D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WiFiPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.WiFiPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A39623AA26B4D72400D44685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WiFiPassword/WiFiPassword.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"WiFiPassword/Preview Content\"";
+				DEVELOPMENT_TEAM = WH8WQW889D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WiFiPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.WiFiPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A39623AC26B4D72400D44685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WH8WQW889D;
+				INFOPLIST_FILE = WiFiPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.WiFiPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiPassword.app/Contents/MacOS/WiFiPassword";
+			};
+			name = Debug;
+		};
+		A39623AD26B4D72400D44685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WH8WQW889D;
+				INFOPLIST_FILE = WiFiPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.WiFiPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiPassword.app/Contents/MacOS/WiFiPassword";
+			};
+			name = Release;
+		};
+		A39623AF26B4D72400D44685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WH8WQW889D;
+				INFOPLIST_FILE = WiFiPasswordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.WiFiPasswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WiFiPassword;
+			};
+			name = Debug;
+		};
+		A39623B026B4D72400D44685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WH8WQW889D;
+				INFOPLIST_FILE = WiFiPasswordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.WiFiPasswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WiFiPassword;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A396237A26B4D71A00D44685 /* Build configuration list for PBXProject "WiFiPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39623A626B4D72400D44685 /* Debug */,
+				A39623A726B4D72400D44685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39623A826B4D72400D44685 /* Build configuration list for PBXNativeTarget "WiFiPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39623A926B4D72400D44685 /* Debug */,
+				A39623AA26B4D72400D44685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39623AB26B4D72400D44685 /* Build configuration list for PBXNativeTarget "WiFiPasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39623AC26B4D72400D44685 /* Debug */,
+				A39623AD26B4D72400D44685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39623AE26B4D72400D44685 /* Build configuration list for PBXNativeTarget "WiFiPasswordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39623AF26B4D72400D44685 /* Debug */,
+				A39623B026B4D72400D44685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A396237726B4D71A00D44685 /* Project object */;
+}
