@@ -87,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3933C0226B55FB900195DD7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A3933BF726B5417000195DD7 /* AppError.swift */,
+				A3933BEF26B540CD00195DD7 /* WiFiHelper.swift */,
+				A39624CF26B4F25600D44685 /* QRCode.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		A396237626B4D71A00D44685 = {
 			isa = PBXGroup;
 			children = (
@@ -110,19 +120,17 @@
 		A396238126B4D71A00D44685 /* WiFiPassword */ = {
 			isa = PBXGroup;
 			children = (
+				A3933C0226B55FB900195DD7 /* Tools */,
 				A39624E726B5363C00D44685 /* Extension */,
 				A396238226B4D71A00D44685 /* AppDelegate.swift */,
 				A396238426B4D71A00D44685 /* ContentView.swift */,
 				A39624D726B500D000D44685 /* WiFiInfoView.swift */,
+				A3933BE726B53F5F00195DD7 /* SizePreferenceKey.swift */,
 				A396238626B4D72400D44685 /* Assets.xcassets */,
 				A396238B26B4D72400D44685 /* Main.storyboard */,
 				A396238E26B4D72400D44685 /* Info.plist */,
 				A396238F26B4D72400D44685 /* WiFiPassword.entitlements */,
 				A396238826B4D72400D44685 /* Preview Content */,
-				A39624CF26B4F25600D44685 /* QRCode.swift */,
-				A3933BE726B53F5F00195DD7 /* SizePreferenceKey.swift */,
-				A3933BEF26B540CD00195DD7 /* WiFiHelper.swift */,
-				A3933BF726B5417000195DD7 /* AppError.swift */,
 			);
 			path = WiFiPassword;
 			sourceTree = "<group>";
