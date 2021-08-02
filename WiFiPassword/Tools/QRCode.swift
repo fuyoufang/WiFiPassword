@@ -8,8 +8,8 @@
 /*
  下面代码来自
  https://github.com/aschuch/QRCode
+ 其他资料
  https://stackoverflow.com/questions/61589783/resize-ciimage-to-an-exact-size
- 
  https://nshipster.com/image-resizing/
  */
 

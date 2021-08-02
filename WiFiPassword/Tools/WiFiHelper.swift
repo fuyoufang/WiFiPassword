@@ -17,12 +17,43 @@ struct WiFiHelper {
             debugPrint("no WiFi")
             throw AppError.noWiFiInformation
         }
+
+        /*
+         
+         let command = "\(path) -I | awk '/ SSID/ {{print substr($0, index($0, $2))}}'"
+         
+         awk '/ SSID/ {{print substr($0, index($0, $2))}}'
+         解释：
+         1. / SSID/: 为模式，标识包含 " SSID" 的行
+         2. substr($0, index($0, $2))：为截取 $0 从 index($0, $2) 开始到最后的字符串，
+            举例来说，加入字符串为："   SSID: 10-floor-5G"，
+            则 $0 为 "   SSID: 10-floor-5G"，$1 为 "SSID:", $2 为 "10-floor-5G"，
+         参考资料
+         https://www.cnblogs.com/Berryxiong/p/4807640.html
+         */
+        //
+        let command = "\(path) -I"
         
-        let command = "\(path) -I | awk '/ SSID/ {{print substr($0, index($0, $2))}}'"
-        guard let ssid = shell(command) else {
+        guard let result = shell(command) else {
+            throw AppError.noWiFiInformation
+        }
+        
+        let ssidLine: String? = result.components(separatedBy: "\n")
+            .first { (line: String) -> Bool in
+                return line.contains(" SSID:")
+            }
+        
+        guard let line = ssidLine, let range = line.range(of: "SSID:") else {
+            throw AppError.noWiFiInformation
+        }
+        
+        let ssid = line[range.upperBound...].trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard ssid.count > 0 else {
             throw AppError.noWiFiInformation
         }
         return ssid
+
     }
     
     static func getPassword(ssid: String) -> String? {
