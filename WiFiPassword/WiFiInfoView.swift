@@ -64,6 +64,7 @@ struct WiFiInfoView: View {
         )
         .padding()
         .frame(minWidth: 500, idealWidth: 500, minHeight: 380, maxHeight: 380, alignment: .center)
+        .background(Color(NSColor.windowBackgroundColor))
     }
     
 }
