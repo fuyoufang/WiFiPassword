@@ -17,14 +17,14 @@ struct WiFiInfoView: View {
             Text("WiFi 登陆（WiFi Login）")
                 .font(.largeTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            
+
             HStack {
                 if let image = QRCode(WiFiHelper.getQRCodeText(ssid: name, password: password))?.image {
                     Image(nsImage: image)
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
-                
+
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading) {
                         Text("名称（Network name）")
@@ -33,6 +33,7 @@ struct WiFiInfoView: View {
                         Text(name)
                             .font(Font.system(size: 40))
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .fixedSize()
                     }
                     Spacer()
                     VStack(alignment: .leading) {
@@ -42,6 +43,7 @@ struct WiFiInfoView: View {
                         Text(password)
                             .font(Font.system(size: 40))
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .fixedSize()
                     }
                 }
                 .padding()
@@ -63,33 +65,6 @@ struct WiFiInfoView: View {
                 .stroke(Color.white, style: StrokeStyle(lineWidth: 2, dash: [10]))
         )
         .padding()
-        .frame(minWidth: 500, idealWidth: 500, minHeight: 380, maxHeight: 380, alignment: .center)
-        .background(Color(NSColor.windowBackgroundColor))
-    }
-    
-}
-
-extension View {
-    
-    /// 获取 view 的截图
-    /// https://stackoverflow.com/questions/58745000/how-to-convert-a-swift-ui-view-to-a-nsimage
-    /// - Parameter size: 图片尺寸
-    /// - Returns: 图片
-    func snapshot(size: CGSize) -> NSImage {
-        let contentRect = NSRect(x: 0, y: 0, width: size.width, height: size.height)
-        let newWindow = NSWindow(
-            contentRect: contentRect,
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        
-        newWindow.contentView = NSHostingView(rootView: self)
-        
-        let bitMapRep = newWindow.contentView!.bitmapImageRepForCachingDisplay(in: contentRect)!
-        
-        newWindow.contentView!.cacheDisplay(in: contentRect, to: bitMapRep)
-        let image = NSImage(size: bitMapRep.size)
-        image.addRepresentation(bitMapRep)
-        return image
-
+        .background(Color(NSColor.windowBackgroundColor))        
     }
 }

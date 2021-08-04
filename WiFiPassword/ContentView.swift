@@ -31,8 +31,10 @@ struct ContentView: View {
                         guard let name = self.name, let password = self.password else {
                             return
                         }
-                        let nsImage = WiFiInfoView(name: name, password: password)
-                            .snapshot(size: infoViewSize)
+                        guard let nsImage = WiFiInfoView(name: name, password: password)
+                                .snapshot(size: infoViewSize) else {
+                            return
+                        }
                         saveNSImage(nsImage)
                     }
                 }

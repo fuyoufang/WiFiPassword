@@ -20,6 +20,7 @@
 		A39624D026B4F25700D44685 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39624CF26B4F25600D44685 /* QRCode.swift */; };
 		A39624D826B500D000D44685 /* WiFiInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39624D726B500D000D44685 /* WiFiInfoView.swift */; };
 		A39624E026B535E500D44685 /* NSImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39624DF26B535E500D44685 /* NSImage+Extension.swift */; };
+		A3A5C36926BA2534009A6E99 /* View+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A5C36826BA2534009A6E99 /* View+Snapshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A39624CF26B4F25600D44685 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		A39624D726B500D000D44685 /* WiFiInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiInfoView.swift; sourceTree = "<group>"; };
 		A39624DF26B535E500D44685 /* NSImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extension.swift"; sourceTree = "<group>"; };
+		A3A5C36826BA2534009A6E99 /* View+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Snapshot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				A39624DF26B535E500D44685 /* NSImage+Extension.swift */,
+				A3A5C36826BA2534009A6E99 /* View+Snapshot.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A396238526B4D71A00D44685 /* ContentView.swift in Sources */,
+				A3A5C36926BA2534009A6E99 /* View+Snapshot.swift in Sources */,
 				A396238326B4D71A00D44685 /* AppDelegate.swift in Sources */,
 				A39624E026B535E500D44685 /* NSImage+Extension.swift in Sources */,
 				A39624D026B4F25700D44685 /* QRCode.swift in Sources */,
